@@ -56,7 +56,6 @@ class Game extends Component {
         ]
       }));
     }
-    
   }
 
   doScore(rulename, ruleFn) {
@@ -85,7 +84,7 @@ class Game extends Component {
               {this.rollsLeft}
               <button
                 className='Game-reroll'
-                disabled={this.state.locked.every(x => x)|| this.state.rollsLeft === 0}
+                disabled={this.state.locked.every(x => x)}
                 onClick={this.roll}
               >
                 {this.state.rollsLeft} Rerolls Left
